@@ -36,14 +36,14 @@ var (
 // coin conversation
 const (
 	ShowPrecisionNum int64 = 4      //cli命令显示保留4位
-	MaxCoin          int64 = 1e9    // 1e17/1e8
+	MaxCoin          int64 = 1e13    // 1e17/1e4
 	MaxFloatCharNum  int   = 15     //float64最大可精确表示15个字符的浮点数，小数点占一位，小数点位置不确定，不好确定最大值
 	MaxTxSize              = 100000 //100K
 	MaxTxGroupSize   int32 = 20
 	MaxBlockSize           = 20000000 //20M
 	MaxTxsPerBlock         = 100000
 	MaxTokenBalance  int64 = 900 * 1e8 * DefaultCoinPrecision //缺省900亿，小数位精度为1e8, 900*1e16 大约为int64最大可表示范围
-	DefaultMinFee    int64 = 1e5
+	DefaultMinFee    int64 = 1e10
 )
 
 // Chain33Config ...
