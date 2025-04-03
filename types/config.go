@@ -42,7 +42,7 @@ const (
 	MaxTxGroupSize   int32 = 20
 	MaxBlockSize           = 20000000 //20M
 	MaxTxsPerBlock         = 100000
-	MaxTokenBalance  int64 = 900 * 1e8 * DefaultCoinPrecision //缺省900亿，小数位精度为1e8, 900*1e16 大约为int64最大可表示范围
+	MaxTokenBalance  int64 = 900 * 1e8 * 1e8 //DefaultCoinPrecision //缺省900亿，小数位精度为1e8, 900*1e16 大约为int64最大可表示范围
 	DefaultMinFee    int64 = 1e10
 )
 
